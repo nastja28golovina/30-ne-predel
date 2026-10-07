@@ -2,7 +2,7 @@
 const viewport = document.querySelector('#viewport');
 // Keep the collage intact and fit the complete desktop canvas into the window.
 function fitDesktop() {
-  const scale = Math.min(window.innerWidth / 1920, window.innerHeight / 1080, 1);
+  const scale = Math.min(window.innerWidth / 1920, (window.innerHeight - (document.documentElement.classList.contains('has-sticker-stats') ? 90 : 0)) / 1080, 1);
   viewport.style.setProperty('--desktop-scale', scale);
   Mobile.fit(viewport);
 }
@@ -31,6 +31,7 @@ function show(route, focus = false) {
   if (Mobile.active()) Mobile.render(route, template.content.cloneNode(true), viewport);
   else viewport.replaceChildren(template.content.cloneNode(true));
   setupStickerStats(route);
+  fitDesktop();
   setupPhotos(route);
   if (route === 'home' && !Mobile.active()) {
     const phrase = document.createElement('p');
@@ -52,13 +53,15 @@ function show(route, focus = false) {
     }
   }
   if (route.startsWith('intro')) {
-    for (const a of viewport.querySelectorAll('a[href="#/home"]')) a.textContent = 'Назад';
-    if (!Mobile.active()) {
+    for (const a of viewport.querySelectorAll('a[href="#/home"]')) {
+      if (a.textContent.trim() === 'ДАЛЬШЕ') a.textContent = 'Назад';
+    }
+    if (!Mobile.active() && !document.querySelector('.stats-scroll-hint')) {
       const hint = document.createElement('button');
       hint.type = 'button'; hint.className = 'stats-scroll-hint';
       hint.innerHTML = '<span>там еще что-то</span><svg width="72" height="66" viewBox="0 0 72 66" fill="none" aria-hidden="true"><path d="M9 6C46 7 59 22 48 55M34 42L47 58L62 45" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
       hint.addEventListener('click', () => document.getElementById('sticker-stats').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'}));
-      viewport.querySelector('.screen').append(hint);
+      document.getElementById('sticker-stats').prepend(hint);
     }
   }
   if (route.startsWith('question-')) setupQuestion(viewport, route);
