@@ -1,0 +1,311 @@
+@font-face{font-family:"beer money";src:url("fonts/beer-money-regular.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Futura PT";src:url("fonts/futura-pt-book.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Futura PT";src:url("fonts/futura-pt-demi.ttf") format("truetype");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Futura PT";src:url("fonts/futura-pt-medium.ttf") format("truetype");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Futura PT";src:url("fonts/futura-pt-bold.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap}
+*{box-sizing:border-box;border-width:0;border-style:solid}html,body{margin:0;background:#fffdef;color:#000}html,body{width:100%;height:100%;overflow:hidden}body{font-family:"Futura PT",sans-serif}p,ul{margin:0}ul{padding:0}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;text-align:inherit;cursor:pointer}img{display:block}#viewport{width:1920px;height:1080px;margin:0;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--desktop-scale,1));transform-origin:center;overflow:hidden}.screen{width:1920px!important;height:1080px!important;position:relative;overflow:hidden}a:focus-visible,button:focus-visible{outline:3px solid #2c4240;outline-offset:6px}.card-image,.card-title{transition:transform 280ms cubic-bezier(.2,.75,.3,1);transform-origin:center}.card-image.card-active{transform:rotate(-5deg) scale(1.075)}.card-title.card-active{transform:rotate(5deg) scale(1.025)}[data-answer]{transition:filter 160ms}[data-answer]:hover{filter:brightness(.96)}[data-answer].selected{outline:2px solid #2c4240;outline-offset:2px}[data-answer].wrong{animation:nudge 220ms ease}[data-answer].wrong:after{content:"";position:absolute;inset:0;border:2px solid #a87777;border-radius:20px;pointer-events:none}@keyframes nudge{25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.see38320a5a{background:#fffdef;position:relative;width:100%;height:100%}
+.s93a9fc9920{--ty:-50%;position:absolute;display:contents;left:-0.47px;top:50%;translate:var(--tx,0) var(--ty,0)}
+.sdfd8d95429{--tx:-50%;--ty:-50%;position:absolute;background:#fffdef;height:1080px;left:50%;top:50%;width:1920px;translate:var(--tx,0) var(--ty,0)}
+.saf245690f8{--ty:-50%;position:absolute;align-content:stretch;display:flex;flex-direction:column;gap:40px;height:1080px;align-items:flex-start;left:-0.47px;opacity:0.5;top:50%;width:1920px;translate:var(--tx,0) var(--ty,0)}
+.s6e2e058af1{align-content:stretch;display:flex;gap:44px;align-items:flex-start;position:relative;flex-shrink:0;width:100%}
+.s071780bfe4{aspect-ratio:128/128;flex:1 0 0;min-width:1px;position:relative}
+.s8faf267d30{position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%}
+.s189875d04d{aspect-ratio:1848/128;align-content:stretch;display:flex;gap:44px;align-items:flex-start;position:relative;flex-shrink:0;width:100%}
+.s469fb6c3f5{position:absolute;height:1079px;left:0;opacity:0.15;top:0;width:1920px}
+.sfb97e384f1{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.sf379a32222{position:absolute;height:118.63%;left:0;max-width:none;top:-12.97%;width:100%}
+.s2795757921{position:absolute;background:rgba(255,255,255,0.6);border-width:1px;border-color:#1f2937;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;left:67px;padding-left:24px;padding-right:24px;padding-top:14px;padding-bottom:14px;border-radius:20px;top:175px;width:738px}
+.se3fba8fcc9{word-break:break-word;flex:1 0 0;font-family:"Futura PT",sans-serif;font-weight:400;line-height:0;min-width:1px;font-style:normal;position:relative;font-size:24px;color:#000}
+.s9df0158fe5{line-height:1.3;margin-bottom:0}
+.s350e5afd21{line-height:1.3}
+.s475d11a3dc{position:absolute;background:rgba(255,255,255,0.6);border-width:1px;border-color:#1f2937;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;left:67px;padding-left:24px;padding-right:24px;padding-top:14px;padding-bottom:14px;border-radius:20px;top:403px}
+.see4617093c{word-break:break-word;font-family:"Futura PT",sans-serif;font-weight:400;line-height:0;font-style:normal;position:relative;flex-shrink:0;font-size:24px;color:#000;width:661px;white-space:pre-wrap}
+.sa34abe1297{position:absolute;background:rgba(255,255,255,0.6);border-width:1px;border-color:#1f2937;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;left:811px;padding-left:24px;padding-right:24px;padding-top:14px;padding-bottom:14px;border-radius:20px;top:482px}
+.sd07794a584{word-break:break-word;font-family:"Futura PT",sans-serif;font-weight:400;line-height:0;font-style:normal;position:relative;flex-shrink:0;font-size:24px;color:#000;width:701px;white-space:pre-wrap}
+.s0fe362c03f{font-family:"Futura PT",sans-serif;font-weight:700;line-height:1.3}
+.sc4f40f7e17{position:absolute;background:#dedede;align-content:stretch;cursor:pointer;display:flex;align-items:center;justify-content:center;left:1551px;padding-left:24px;padding-right:24px;padding-top:12px;padding-bottom:12px;border-radius:20px;top:967px}
+.sa4cb2d5392{word-break:break-word;font-family:"beer money",sans-serif;font-weight:400;line-height:normal;font-style:normal;position:relative;flex-shrink:0;color:#1f2937;font-size:40px;text-align:right;white-space:nowrap}
+.sfc768c80ba{--tx:-50%;word-break:break-word;position:absolute;font-family:"Futura PT",sans-serif;font-weight:400;line-height:0;left:1604px;font-style:normal;font-size:24px;color:#000;text-align:center;top:348px;width:456px;translate:var(--tx,0) var(--ty,0)}
+.s28431aec6f{position:absolute;display:flex;height:226.498px;align-items:center;justify-content:center;left:1495px;top:107px;width:231.251px}
+.sb26d65add2{flex:none;rotate:-5.39deg}
+.s406897d24e{height:207.424px;position:relative;border-radius:20px;width:212.696px}
+.sb440a5c4af{position:absolute;inset:0;max-width:none;object-fit:cover;pointer-events:none;border-radius:20px;width:100%;height:100%}
+.s481be3fa52{word-break:break-word;position:absolute;font-family:"Futura PT",sans-serif;font-weight:500;line-height:normal;left:16px;font-style:normal;opacity:0.3;color:#1f2937;font-size:18px;top:15px;width:533px}
+.s6b949524a9{--tx:-50%;--ty:-50%;word-break:break-word;position:absolute;align-content:stretch;display:flex;flex-direction:column;gap:40px;align-items:center;left:calc(50% + 0.5px);font-style:normal;font-size:24px;color:#000;text-align:center;top:calc(50% - 71px);width:1017px;translate:var(--tx,0) var(--ty,0)}
+.s6f840b89de{font-family:"Futura PT",sans-serif;font-weight:700;font-style:italic;line-height:1.3;min-width:100%;position:relative;flex-shrink:0;width:min-content;font-style:italic}
+.s2ace177c6a{font-family:"Futura PT",sans-serif;font-weight:400;line-height:0;position:relative;flex-shrink:0;width:925px;white-space:pre-wrap}
+.sf417a015da{font-family:"Futura PT",sans-serif;font-weight:400;line-height:0;min-width:100%;position:relative;flex-shrink:0;width:min-content}
+.sc78fa2ba38{font-family:"Futura PT",sans-serif;font-weight:400;font-style:italic;line-height:1.3;font-style:italic}
+.s58be58e04d{font-family:"Futura PT",sans-serif;font-weight:400;font-style:italic;line-height:0;min-width:100%;position:relative;flex-shrink:0;width:min-content;font-style:italic}
+.saeddf40ec1{font-family:"Futura PT",sans-serif;font-weight:700;font-style:italic;line-height:1.3;margin-bottom:0;font-style:italic}
+.s76cc89f3e8{--tx:-50%;position:absolute;background:#1f2937;align-content:stretch;cursor:pointer;display:flex;align-items:center;justify-content:center;left:calc(50% + 0.5px);padding-left:24px;padding-right:24px;padding-top:12px;padding-bottom:12px;border-radius:20px;top:877px;translate:var(--tx,0) var(--ty,0)}
+.s6690744ef8{word-break:break-word;font-family:"beer money",sans-serif;font-weight:400;line-height:normal;font-style:normal;position:relative;flex-shrink:0;font-size:40px;text-align:right;color:#fff;white-space:nowrap}
+.s0e2510d3fa{--ty:-50%;position:absolute;display:contents;left:-0.47px;top:calc(50% + 6px);translate:var(--tx,0) var(--ty,0)}
+.s23f8759428{--tx:-50%;--ty:-50%;position:absolute;background:#fffdef;height:1080px;left:50%;top:calc(50% + 6px);width:1920px;translate:var(--tx,0) var(--ty,0)}
+.s9d1ad7013d{--ty:-50%;position:absolute;align-content:stretch;display:flex;flex-direction:column;gap:40px;height:1080px;align-items:flex-start;left:-0.47px;opacity:0.5;top:calc(50% + 6px);width:1920px;translate:var(--tx,0) var(--ty,0)}
+.s4669dabefe{position:absolute;display:contents;left:418.5px;top:167.5px}
+.s113b735d65{position:absolute;height:372px;left:654.34px;top:168px;width:778.664px}
+.s8c9e6bd87b{position:absolute;height:373px;left:653.52px;top:167.5px;width:779.976px}
+.s19b9656d19{position:absolute;height:584.866px;left:419px;top:224.53px;width:507px}
+.s6c30b24e35{position:absolute;height:586.098px;left:418.5px;top:223.91px;width:508.22px}
+.sf6525f92fb{position:absolute;height:351.637px;left:575.32px;top:540px;width:350.677px}
+.s934ef378af{position:absolute;height:352.619px;left:574.48px;top:539.6px;width:351.974px}
+.se1038def5c{position:absolute;height:372px;left:760.94px;top:540px;width:429.215px}
+.s9c1658ea0d{position:absolute;height:373.424px;left:760.23px;top:539.08px;width:430.731px}
+.sffd3f5c4eb{position:absolute;height:317.209px;left:926px;top:540px;width:506.999px}
+.s9cb7357e7d{position:absolute;height:319.434px;left:923.86px;top:539px;width:510.142px}
+.s472438aad9{position:absolute;height:744px;left:419px;top:168px;width:1014px}
+.sfe3fc0e286{position:absolute;inset:-0.2% -0.15%}
+.sacc3667e96{display:block;max-width:none;width:100%;height:100%}
+.s7a00953aeb{position:absolute;display:flex;inset:21.77% 41.76% 28.48% 38.22%;align-items:center;justify-content:center}
+.s00405f1a18{flex:none;height:hypot(23.4378cqw,89.7695cqh);rotate:-10.58deg;width:hypot(76.5622cqw,-10.2305cqh)}
+.sb9b0973411{position:relative;border-bottom-right-radius:68px;border-top-left-radius:180px;width:100%;height:100%}
+.s0ef6f7eecf{position:absolute;inset:0;overflow:hidden;pointer-events:none;border-bottom-right-radius:68px;border-top-left-radius:180px}
+.sf71f1f6e02{position:absolute;height:99.95%;left:0;max-width:none;top:0.05%;width:99.92%}
+.s38bf685aef{--tx:-100%;word-break:break-word;position:absolute;font-family:"beer money",sans-serif;font-weight:400;line-height:0;left:1791px;font-style:normal;color:#2c4240;font-size:60px;text-align:right;top:281px;white-space:nowrap;translate:var(--tx,0) var(--ty,0)}
+.s8c3b28db53{line-height:normal;margin-bottom:0;white-space:pre}
+.sb94fe8231d{line-height:normal;white-space:pre}
+.se9b56c596d{position:absolute;background:#1f2937;align-content:stretch;cursor:pointer;display:flex;align-items:center;justify-content:center;left:1667px;padding-left:24px;padding-right:24px;padding-top:12px;padding-bottom:12px;border-radius:20px;top:969px}
+.s41475f64d7{position:absolute;height:652.444px;left:1491.98px;top:199.41px;width:146.285px}
+.sb419904981{position:absolute;inset:-0.31% -1.37%}
+.se55f1a64ea{position:absolute;display:flex;height:316.631px;align-items:center;justify-content:center;left:36.53px;top:226px;width:388.909px}
+.s7a84e8e0fd{flex:none;rotate:-8.48deg}
+.s48c123f368{display:block;cursor:pointer;height:267.455px;position:relative;border-radius:20px;box-shadow:0px 0px 0px 1px rgba(0,0,0,0.2),0px 0px 2px 0px rgba(0,0,0,0.08),0px 2px 6px 0px rgba(0,0,0,0.1);width:353.335px}
+.seaa8c15132{position:absolute;inset:0;pointer-events:none;border-radius:20px}
+.s83a6897ae2{position:absolute;background:#fff;inset:0;border-radius:20px}
+.s0a915fb657{position:absolute;inset:0;overflow:hidden;border-radius:20px}
+.s3407971055{position:absolute;left:0;max-width:none;width:100%;height:100%;top:0}
+.s4e5479276f{position:absolute;display:block;cursor:pointer;height:505.996px;left:694px;border-radius:20px;box-shadow:0px 0px 0px 1px rgba(0,0,0,0.2),0px 0px 2px 0px rgba(0,0,0,0.08),0px 2px 6px 0px rgba(0,0,0,0.1);top:417px;width:421.649px}
+.s5ceedf2f9b{position:absolute;height:111.11%;left:0;max-width:none;top:-11.11%;width:100%}
+.sfaeea522f8{position:absolute;display:flex;height:305.162px;align-items:center;justify-content:center;left:1380.72px;top:682px;width:244.044px}
+.sb1b373af7b{flex:none;rotate:8.45deg}
+.s76d61debdf{display:block;cursor:pointer;height:277.998px;position:relative;border-radius:20px;box-shadow:0px 0px 0px 1px rgba(0,0,0,0.2),0px 0px 2px 0px rgba(0,0,0,0.08),0px 2px 6px 0px rgba(0,0,0,0.1);width:205.432px}
+.s14f27a912b{position:absolute;display:flex;height:344.461px;align-items:center;justify-content:center;left:132px;top:678.27px;width:270.597px}
+.s7ed6ab43db{flex:none;rotate:4.85deg}
+.s5c1acec202{display:block;cursor:pointer;height:325px;position:relative;border-radius:20px;box-shadow:0px 0px 0px 1px rgba(0,0,0,0.2),0px 0px 2px 0px rgba(0,0,0,0.08),0px 2px 6px 0px rgba(0,0,0,0.1);width:244px}
+.sc639822fd0{position:absolute;display:block;cursor:pointer;height:226px;left:1634px;border-radius:20px;box-shadow:0px 0px 0px 1px rgba(0,0,0,0.2),0px 0px 2px 0px rgba(0,0,0,0.08),0px 2px 6px 0px rgba(0,0,0,0.1);top:319px;width:170px}
+.s2b88329934{position:absolute;display:flex;height:383.175px;align-items:center;justify-content:center;left:1210.65px;top:55px;width:298.764px}
+.s064705304b{flex:none;rotate:11.09deg}
+.se6ef4e114f{display:block;cursor:pointer;height:344px;position:relative;border-radius:20px;width:237px}
+.s2567c04302{position:absolute;inset:0;overflow:hidden;pointer-events:none;border-radius:20px}
+.s828c462635{position:absolute;height:106.69%;left:-0.09%;max-width:none;top:-6.69%;width:100.19%}
+.sba19579117{position:absolute;background:rgba(178,178,178,0.4);align-content:stretch;cursor:pointer;display:flex;align-items:center;justify-content:center;left:1120.53px;padding-left:24px;padding-right:24px;padding-top:8px;padding-bottom:8px;border-radius:100px;top:89.59px}
+.s345a27775a{word-break:break-word;font-family:"beer money",sans-serif;font-weight:400;line-height:normal;font-style:normal;position:relative;flex-shrink:0;font-size:80px;color:#000;text-align:left;white-space:nowrap}
+.seac59f0a67{position:absolute;background:rgba(178,178,178,0.4);align-content:stretch;cursor:pointer;display:flex;align-items:center;justify-content:center;left:1573.53px;padding-left:24px;padding-right:24px;padding-top:8px;padding-bottom:8px;border-radius:100px;top:247px}
+.s3615ca68cb{position:absolute;background:rgba(178,178,178,0.4);align-content:stretch;cursor:pointer;display:flex;align-items:center;justify-content:center;left:1337.53px;padding-left:24px;padding-right:24px;padding-top:8px;padding-bottom:8px;border-radius:100px;top:614px}
+.s40ffa0c21c{position:absolute;background:rgba(178,178,178,0.4);align-content:stretch;cursor:pointer;display:flex;align-items:center;justify-content:center;left:626.53px;padding-left:24px;padding-right:24px;padding-top:8px;padding-bottom:8px;border-radius:100px;top:368px}
+.s59d28b3beb{position:absolute;display:flex;height:180.219px;align-items:center;justify-content:center;left:213.53px;top:150px;width:273.071px}
+.s18295d6c24{flex:none;rotate:16.13deg}
+.s718eea4a88{background:rgba(178,178,178,0.4);align-content:stretch;cursor:pointer;display:flex;align-items:center;justify-content:center;padding-left:24px;padding-right:24px;padding-top:8px;padding-bottom:8px;position:relative;border-radius:100px}
+.s5cfec564f1{word-break:break-word;font-family:"beer money",sans-serif;font-weight:400;line-height:normal;font-style:normal;position:relative;flex-shrink:0;color:#1f2937;font-size:80px;text-align:left;white-space:nowrap}
+.sa03e52736a{position:absolute;display:flex;height:172.439px;align-items:center;justify-content:center;left:247.53px;top:600px;width:246.174px}
+.s9a3ef92bb5{position:absolute;background:rgba(31,41,55,0.5);align-content:stretch;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;left:1784.53px;padding-bottom:44px;padding-top:48px;padding-left:42px;padding-right:42px;border-radius:61px;width:100px;height:100px;top:951px}
+.sc058031676{word-break:break-word;font-family:"beer money",sans-serif;font-weight:400;line-height:normal;font-style:normal;position:relative;flex-shrink:0;font-size:24px;text-align:left;color:#fff;white-space:nowrap}
+.sf5dc2ff651{position:absolute;background:rgba(31,41,55,0.5);align-content:stretch;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;left:1784.53px;padding-bottom:44px;padding-top:48px;padding-left:42px;padding-right:42px;border-radius:61px;width:100px;height:100px;top:50px}
+.s112b0671f1{word-break:break-word;font-family:"beer money",sans-serif;font-weight:400;line-height:normal;font-style:normal;position:relative;flex-shrink:0;font-size:24px;text-align:left;color:#fff;width:46px}
+.saaaab6a105{position:absolute;display:flex;height:48.808px;align-items:center;justify-content:center;left:1577.53px;top:999px;width:182.16px}
+.sc0943df971{flex:none;rotate:-6.05deg}
+.s6e375e3668{word-break:break-word;font-family:"beer money",sans-serif;font-weight:400;line-height:normal;font-style:normal;position:relative;font-size:24px;color:#000;white-space:nowrap}
+.s484ab57dee{position:absolute;display:flex;height:49.524px;align-items:center;justify-content:center;left:52.53px;top:595px;width:141.916px}
+.s7113332ff2{flex:none;rotate:-7.78deg}
+.s94fd7d43e3{word-break:break-word;font-family:"Futura PT",sans-serif;font-weight:400;font-style:italic;line-height:normal;font-style:normal;position:relative;color:#5c4033;font-size:24px;white-space:nowrap;font-style:italic}
+.se862442d5d{position:absolute;display:flex;height:46.141px;align-items:center;justify-content:center;left:1178.53px;top:524.38px;width:117.146px}
+.s5d4743c10c{position:absolute;display:flex;height:35.586px;align-items:center;justify-content:center;left:842.53px;top:212.55px;width:39.864px}
+.sfdedeec87f{word-break:break-word;position:absolute;font-family:"Futura PT",sans-serif;font-weight:400;font-style:italic;line-height:normal;left:545.46px;font-style:normal;color:#5c4033;font-size:24px;top:769.29px;white-space:nowrap;font-style:italic}
+.se334d81507{word-break:break-word;position:absolute;font-family:"Futura PT",sans-serif;font-weight:400;font-style:italic;line-height:normal;left:877.53px;font-style:normal;color:#5c4033;font-size:24px;top:976px;white-space:nowrap;font-style:italic}
+.sa91f007324{word-break:break-word;position:absolute;font-family:"Futura PT",sans-serif;font-weight:400;font-style:italic;line-height:normal;left:1562.53px;font-style:normal;color:#5c4033;font-size:24px;top:160px;white-space:nowrap;font-style:italic}
+.s95c15d0afe{position:absolute;background:rgba(255,255,255,0.6);border-width:1px;border-color:#1f2937;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;left:191.53px;padding-left:24px;padding-right:24px;padding-top:14px;padding-bottom:14px;border-radius:20px;top:87px}
+.s32e934e7bb{word-break:break-word;font-family:"Futura PT",sans-serif;font-weight:400;line-height:1.3;font-style:normal;position:relative;flex-shrink:0;font-size:24px;color:#000;white-space:nowrap}
+.s9d8ab2fad0{--tx:-50%;--ty:-50%;position:absolute;display:contents;left:calc(50% - 0.23px);top:50%;translate:var(--tx,0) var(--ty,0)}
+.s1b76fd9219{position:absolute;height:1080px;left:-0.47px;opacity:0.2;top:0;width:1920px}
+.s12f2c1cbe5{position:absolute;height:108.44%;left:0;max-width:none;top:0;width:100%}
+.sa9ff726749{--tx:-50%;position:absolute;background:rgba(178,178,178,0.4);align-content:stretch;display:flex;align-items:center;justify-content:center;left:calc(50% - 0.47px);padding-left:24px;padding-right:24px;padding-top:8px;padding-bottom:8px;border-radius:100px;top:23px;translate:var(--tx,0) var(--ty,0)}
+.sfe605607e8{word-break:break-word;font-family:"beer money",sans-serif;font-weight:400;line-height:normal;font-style:normal;position:relative;flex-shrink:0;font-size:80px;color:#000;white-space:nowrap}
+.sc37db6f1f8{word-break:break-word;position:absolute;font-family:"Futura PT",sans-serif;font-weight:400;line-height:normal;left:calc(50% - 205.47px);font-style:normal;font-size:32px;color:#000;top:164px;white-space:nowrap}
+.s4e68145462{position:absolute;align-content:stretch;display:flex;gap:47px;align-items:flex-start;left:69.53px;top:487px}
+.s2dfad14512{word-break:break-word;align-content:stretch;display:flex;flex-direction:column;font-family:"Futura PT",sans-serif;font-weight:400;gap:32px;align-items:flex-start;justify-content:center;line-height:normal;font-style:normal;position:relative;flex-shrink:0;font-size:24px;color:#000;width:435px}
+.s67366dcb7c{position:relative;flex-shrink:0;width:100%}
+.sd7150101ae{height:226px;position:relative;border-radius:20px;box-shadow:0px 0px 0px 1px rgba(0,0,0,0.2),0px 0px 2px 0px rgba(0,0,0,0.08),0px 2px 6px 0px rgba(0,0,0,0.1);flex-shrink:0;width:170px}
+.s82a27e81c4{position:absolute;align-content:stretch;display:flex;gap:38px;align-items:center;left:44.53px;top:879px}
+.s85fd0db94d{background:rgba(255,255,255,0.6);border-width:1px;border-color:#1f2937;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;padding-left:24px;padding-right:24px;padding-top:14px;padding-bottom:14px;position:relative;border-radius:20px;flex-shrink:0;width:505px}
+.sb4e5d18727{word-break:break-word;flex:1 0 0;font-family:"Futura PT",sans-serif;font-weight:400;line-height:normal;min-width:1px;font-style:normal;position:relative;font-size:24px;color:#000}
+.sd9ea6126e4{height:127px;position:relative;border-radius:20px;box-shadow:0px 0px 0px 1px rgba(0,0,0,0.2),0px 0px 2px 0px rgba(0,0,0,0.08),0px 2px 6px 0px rgba(0,0,0,0.1);flex-shrink:0;width:397px}
+.sae7a2a32ff{position:absolute;height:139px;left:1361.53px;border-radius:20px;top:180px;width:324px}
+.s8826a1b2c4{position:absolute;background:#1f2937;align-content:stretch;cursor:pointer;display:flex;align-items:center;justify-content:center;left:62px;padding-left:24px;padding-right:24px;padding-top:12px;padding-bottom:12px;border-radius:20px;top:44px}
+.sdad2a5a5ae{position:absolute;display:contents;left:1316.53px;top:581px}
+.sa83d2a6fe7{position:absolute;height:288px;left:1583.53px;border-radius:20px;box-shadow:0px 0px 0px 1px rgba(0,0,0,0.2),0px 0px 2px 0px rgba(0,0,0,0.08),0px 2px 6px 0px rgba(0,0,0,0.1);top:636px;width:224px}
+.s391e1add0a{word-break:break-word;position:absolute;font-family:"Futura PT",sans-serif;font-weight:400;line-height:normal;left:1393.53px;font-style:normal;font-size:24px;color:#000;top:581px;width:454px}
+.sf04a823030{position:absolute;height:200px;left:1316.53px;border-radius:20px;top:832px;width:282px}
+.s5e8b18b3d6{position:absolute;align-content:stretch;display:flex;flex-direction:column;gap:9px;align-items:center;left:975.53px;top:449px;width:274px}
+.sb836596b0c{word-break:break-word;font-family:"Futura PT",sans-serif;font-weight:400;line-height:normal;min-width:100%;font-style:normal;position:relative;flex-shrink:0;font-size:24px;color:#000;text-align:center;width:min-content}
+.s52046efa6f{height:297px;position:relative;border-radius:20px;flex-shrink:0;width:222px}
+.s36d78be133{position:absolute;background:rgba(255,255,255,0.6);border-width:1px;border-color:#1f2937;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;left:92.53px;padding-left:24px;padding-right:24px;padding-top:14px;padding-bottom:14px;border-radius:20px;top:250px;width:1072px}
+.s16a4c4d308{font-family:"Futura PT",sans-serif;font-weight:700;line-height:normal;margin-bottom:0}
+.sf5c4d1471a{line-height:normal;margin-bottom:0}
+.s32bd4c7660{line-height:normal}
+.s050ae5265a{position:absolute;border-width:8px;border-style:solid;border-color:#fff;height:1079px;left:1122.53px;opacity:0.2;border-radius:4px;box-shadow:0px 0px 0px 1px rgba(0,0,0,0.2),0px 0px 2px 0px rgba(0,0,0,0.08),0px 2px 6px 0px rgba(0,0,0,0.1);top:0;width:797px}
+.s3cf6e2be17{position:absolute;inset:0;pointer-events:none;border-radius:4px}
+.s2d27d59c8f{position:absolute;background:#fff;inset:0;border-radius:4px}
+.s37b7d55df1{position:absolute;inset:0;overflow:hidden;border-radius:4px}
+.sbf93834d16{word-break:break-word;position:absolute;font-family:"Futura PT",sans-serif;font-weight:400;line-height:normal;left:calc(50% - 106.47px);font-style:normal;font-size:32px;color:#000;top:175px;white-space:nowrap}
+.sc2a67541fd{position:absolute;height:118px;left:312.53px;border-radius:20px;top:105px;width:222px}
+.sb4d274bd96{position:absolute;height:250px;left:1682.53px;border-radius:20px;top:59px;width:188px}
+.sfa51084cf2{position:absolute;height:166.4%;left:-31.91%;max-width:none;top:-32%;width:165.96%}
+.s09ff1b4bab{position:absolute;height:288px;left:1478.53px;border-radius:20px;top:624px;width:374px}
+.s591718e856{position:absolute;height:173.26%;left:-0.03%;max-width:none;top:-50.35%;width:100.07%}
+.sb68f6c767e{position:absolute;height:321px;left:1091.53px;border-radius:20px;top:761px;width:241px}
+.s8b895d9571{position:absolute;height:226px;left:35.53px;border-radius:20px;top:655px;width:169px}
+.s86a22ffa65{position:absolute;height:276px;left:725.53px;border-radius:20px;top:663px;width:336px}
+.sd2ddea1899{position:absolute;height:162.35%;left:0;max-width:none;top:-28.02%;width:100%}
+.s55cc5e4789{position:absolute;background:rgba(255,255,255,0.6);border-width:1px;border-color:#1f2937;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;left:35.53px;padding-left:24px;padding-right:24px;padding-top:14px;padding-bottom:14px;border-radius:20px;top:297px;width:991px}
+.s37bd659ce5{word-break:break-word;flex:1 0 0;font-family:"Futura PT",sans-serif;font-weight:400;line-height:0;min-width:1px;font-style:normal;position:relative;font-size:24px;color:#000;white-space:pre-wrap}
+.s5a4fd449fe{margin-bottom:0}
+.s1b2032ee38{text-decoration-skip-ink:none;text-underline-position:from-font;text-decoration-thickness:from-font;text-decoration-style:solid;line-height:1.3;text-decoration-line:line-through}
+.s4be4dc9af3{position:absolute;height:338px;left:296.53px;border-radius:20px;top:724px;width:328px}
+.s4f995199f3{position:absolute;height:129.35%;left:-0.01%;max-width:none;top:-18.94%;width:100.02%}
+.sa4712f7128{--tx:-50%;--ty:-50%;position:absolute;background:rgba(255,255,255,0.6);border-width:1px;border-color:#1f2937;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;left:calc(50% + 191.03px);padding-left:24px;padding-right:24px;padding-top:14px;padding-bottom:14px;border-radius:20px;top:calc(50% + 78.5px);translate:var(--tx,0) var(--ty,0)}
+.s4cfd34f637{word-break:break-word;font-family:"Futura PT",sans-serif;font-weight:700;line-height:1.3;font-style:normal;position:relative;flex-shrink:0;font-size:24px;color:#000;white-space:nowrap}
+.s121c3bbcda{position:absolute;height:172px;left:1091.53px;border-radius:20px;top:243px;width:303px}
+.s47304482b0{position:absolute;display:flex;height:42.894px;align-items:center;justify-content:center;left:87.53px;top:957px;width:93.367px}
+.s21f7722c80{position:absolute;display:flex;height:43.57px;align-items:center;justify-content:center;left:1418.53px;top:946.32px;width:98.321px}
+.sdce508732c{position:absolute;display:flex;height:96.528px;align-items:center;justify-content:center;left:1606.9px;top:434.37px;width:142.289px}
+.s4a76e7c2c7{flex:none;rotate:16.59deg}
+.s1424c5bc41{word-break:break-word;font-family:"Futura PT",sans-serif;font-weight:400;font-style:italic;line-height:0;font-style:normal;position:relative;color:#5c4033;font-size:24px;white-space:nowrap;font-style:italic}
+.s1556bba0ba{word-break:break-word;position:absolute;font-family:"Futura PT",sans-serif;font-weight:400;line-height:normal;left:calc(50% - 408px);font-style:normal;font-size:32px;color:#000;top:175px;white-space:nowrap}
+.s409a59d4b7{position:absolute;align-content:stretch;display:flex;flex-direction:column;gap:20px;align-items:center;left:1604px;top:56px}
+.s0116d0eaa7{word-break:break-word;font-family:"Futura PT",sans-serif;font-weight:400;line-height:normal;min-width:100%;font-style:normal;position:relative;flex-shrink:0;font-size:32px;color:#000;text-align:center;width:min-content}
+.s47de76dfa5{height:365px;position:relative;border-radius:20px;flex-shrink:0;width:273px}
+.s4566ae9a31{position:absolute;display:flex;height:231.049px;align-items:center;justify-content:center;left:251px;top:80px;width:161.076px}
+.sa54e5a955f{flex:none;rotate:-9.4deg}
+.s22cacd710c{height:213px;position:relative;border-radius:20px;width:128px}
+.s4cc6107cb3{position:absolute;height:100.61%;left:0;max-width:none;top:-0.67%;width:100%}
+.s16e3d32ace{position:absolute;height:357px;left:1633px;border-radius:20px;top:654px;width:268px}
+.sf2f1cb315e{position:absolute;background:rgba(255,255,255,0.6);border-width:1px;border-color:#1f2937;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;left:509px;padding-left:24px;padding-right:24px;padding-top:14px;padding-bottom:14px;border-radius:20px;top:269px;width:849px}
+.sd957e4696a{position:absolute;height:304px;left:552px;border-radius:20px;top:503px;width:208px}
+.sd8684d3a47{position:absolute;height:118.93%;left:0;max-width:none;top:-18.93%;width:130.41%}
+.sddbbd57b74{position:absolute;align-content:stretch;display:flex;flex-direction:column;gap:12px;align-items:flex-start;left:62px;top:318px}
+.sdf0a3de519{height:0;position:relative;flex-shrink:0;width:100%}
+.se17fdee951{position:absolute;inset:-5.33px -1.19% -5.33px 0}
+.sd6fa6095c2{word-break:break-word;font-family:"Futura PT",sans-serif;font-weight:400;line-height:normal;min-width:100%;font-style:normal;position:relative;flex-shrink:0;font-size:24px;color:#000;width:min-content}
+.sc023546383{word-break:break-word;font-family:"Futura PT",sans-serif;font-weight:400;line-height:normal;font-style:normal;position:relative;flex-shrink:0;font-size:24px;color:#000;white-space:nowrap}
+.sc1b2084f05{word-break:break-word;font-family:"Futura PT",sans-serif;font-weight:400;line-height:normal;font-style:normal;position:relative;flex-shrink:0;font-size:24px;color:#000;width:447px}
+.s45a5f33296{position:absolute;background:rgba(255,255,255,0.6);border-width:1px;border-color:#1f2937;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;left:266px;padding-left:24px;padding-right:24px;padding-top:14px;padding-bottom:14px;border-radius:20px;top:843px;width:901px}
+.s7ab8f8f200{position:absolute;height:335px;left:1243px;border-radius:20px;top:760px;width:241px}
+.sb7d8ef0c74{position:absolute;height:116.19%;left:0;max-width:none;top:0;width:120.97%}
+.s0354c56e68{position:absolute;height:324px;left:1411px;border-radius:20px;top:388px;width:243px}
+.s05b8490de3{position:absolute;height:321px;left:29px;border-radius:20px;top:712px;width:222px}
+.s4bdf188814{position:absolute;height:254px;left:935px;border-radius:20px;top:484px;width:299px}
+.s9f441407f6{position:absolute;height:205.27%;left:0;max-width:none;top:-62.89%;width:100%}
+.sb1eba5a3ca{word-break:break-word;position:absolute;font-family:"Futura PT",sans-serif;font-weight:400;line-height:normal;left:calc(50% - 260px);font-style:normal;font-size:32px;color:#000;top:175px;white-space:nowrap}
+.s03d919d98f{position:absolute;height:245px;left:1027px;top:382px;width:409px}
+.se7243bda23{position:absolute;height:113.71%;left:0;max-width:none;top:-13.85%;width:100%}
+.s9d388ea392{position:absolute;align-content:stretch;display:flex;flex-direction:column;gap:15px;align-items:center;left:781px;top:253px}
+.sb07d0f6e92{height:129px;position:relative;flex-shrink:0;width:220px}
+.s5317b5c26c{position:absolute;height:100%;left:0;max-width:none;top:0;width:274.09%}
+.s594cff0a7c{word-break:break-word;font-family:"Futura PT",sans-serif;font-weight:400;line-height:normal;font-style:normal;position:relative;flex-shrink:0;font-size:24px;color:#000;text-align:center;white-space:nowrap}
+.sc41fd65b80{position:absolute;align-content:stretch;display:flex;flex-direction:column;gap:15px;align-items:center;left:1512px;top:196px}
+.s23ba7cb1f5{height:406px;position:relative;border-radius:20px;flex-shrink:0;width:305px}
+.sf566037ecb{position:absolute;height:116.59%;left:0;max-width:none;top:-16.67%;width:126.15%}
+.s40aa7af1a8{position:absolute;align-content:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start;left:190px;top:196px;width:333px}
+.s64e848e86e{word-break:break-word;font-family:"Futura PT",sans-serif;font-weight:400;line-height:normal;font-style:normal;position:relative;flex-shrink:0;font-size:24px;color:#000;width:100%}
+.s4be8e16f4a{aspect-ratio:465/95;position:relative;border-radius:20px;flex-shrink:0;width:100%}
+.s494f432479{position:absolute;height:1380%;left:0;max-width:none;top:-777.89%;width:129.68%}
+.s9897c41b54{position:absolute;height:287px;left:148px;border-radius:20px;top:707px;width:301px}
+.sc3464deb67{position:absolute;height:186.05%;left:0;max-width:none;top:-30.81%;width:100%}
+.sa0803b9da1{position:absolute;background:rgba(255,255,255,0.6);border-width:1px;border-color:#1f2937;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;left:57px;padding-left:24px;padding-right:24px;padding-top:14px;padding-bottom:14px;border-radius:20px;top:413px;width:724px}
+.sb361320b36{position:absolute;background:rgba(255,255,255,0.6);border-width:1px;border-color:#1f2937;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;left:1102px;padding-left:24px;padding-right:24px;padding-top:14px;padding-bottom:14px;border-radius:20px;top:700px;width:741px}
+.s3ae2a0aa5f{word-break:break-word;flex:1 0 0;font-family:"Futura PT",sans-serif;font-weight:400;line-height:1.3;min-width:1px;font-style:normal;position:relative;font-size:24px;color:#000}
+.s1fdfb1d32d{position:absolute;background:rgba(255,255,255,0.6);border-width:1px;border-color:#1f2937;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;left:576px;padding-left:24px;padding-right:24px;padding-top:14px;padding-bottom:14px;border-radius:20px;top:896px;width:871px}
+.s3a0e9bf573{--tx:-50%;word-break:break-word;position:absolute;font-family:"Futura PT",sans-serif;font-weight:400;line-height:0;left:calc(50% + 0.5px);font-style:normal;font-size:32px;color:#000;text-align:center;top:164px;white-space:nowrap;translate:var(--tx,0) var(--ty,0)}
+.sf6aa68b6c2{position:absolute;display:contents;left:1633px;top:87.26px}
+.se30a5bb17a{position:absolute;display:flex;height:80.812px;align-items:center;justify-content:center;left:1643px;top:87.26px;width:195.337px}
+.seab6aa73b4{flex:none;rotate:15.21deg}
+.s89fc2d034e{word-break:break-word;font-family:"Futura PT",sans-serif;font-weight:400;font-style:italic;line-height:0;font-style:normal;position:relative;color:#a68c76;font-size:24px;white-space:nowrap;font-style:italic}
+.saaccccb0b8{text-decoration-skip-ink:none;text-underline-position:from-font;text-decoration-thickness:from-font;text-decoration-style:solid;line-height:normal;text-decoration-line:line-through}
+.s09c254a23f{position:absolute;display:flex;height:59.298px;align-items:center;justify-content:center;left:1633px;top:108px;width:116.21px}
+.sd292182fad{word-break:break-word;font-family:"Futura PT",sans-serif;font-weight:400;font-style:italic;line-height:normal;font-style:normal;position:relative;color:#a68c76;font-size:24px;white-space:nowrap;font-style:italic}
+.s315e9b48e5{position:absolute;display:flex;height:92.432px;align-items:center;justify-content:center;left:298px;top:32px;width:175.705px}
+.s1556270d13{flex:none;rotate:-10.89deg}
+.sb40ea394b8{word-break:break-word;font-family:"Futura PT",sans-serif;font-weight:400;font-style:italic;line-height:normal;font-style:normal;position:relative;color:#a68c76;font-size:24px;width:166.999px;font-style:italic}
+.sb02eb1b4b3{position:absolute;height:267.455px;left:1485px;border-radius:20px;box-shadow:0px 0px 0px 1px rgba(0,0,0,0.2),0px 0px 2px 0px rgba(0,0,0,0.08),0px 2px 6px 0px rgba(0,0,0,0.1);top:531px;width:353.335px}
+.s93c5acb566{position:absolute;height:168px;left:109px;border-radius:20px;top:867px;width:319px}
+.sb7228348f4{position:absolute;height:224px;left:1286px;border-radius:20px;top:816px;width:418px}
+.s891ea1bb90{position:absolute;height:139.13%;left:0.09%;max-width:none;top:-16.22%;width:100%}
+.s57c5a96e6e{position:absolute;height:153px;left:1082px;border-radius:20px;top:599px;width:274px}
+.s21def7d205{position:absolute;height:228px;left:572px;border-radius:20px;top:828px;width:251px}
+.s0fb8b0af72{position:absolute;height:204px;left:911px;border-radius:20px;top:772px;width:264px}
+.s65e1e9bff4{position:absolute;background:rgba(255,255,255,0.6);border-width:1px;border-color:#1f2937;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;left:40px;padding-left:24px;padding-right:24px;padding-top:14px;padding-bottom:14px;border-radius:20px;top:278px;width:1817px}
+.sa93d84c3b1{word-break:break-word;font-family:"Futura PT",sans-serif;font-weight:700;line-height:1.3;font-style:normal}
+.s0c3a54c06b{position:absolute;background:rgba(255,255,255,0.6);border-width:1px;border-color:#1f2937;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;left:41px;padding-left:24px;padding-right:24px;padding-top:14px;padding-bottom:14px;border-radius:20px;top:496px}
+.s4eb2a19a41{word-break:break-word;font-family:"Futura PT",sans-serif;font-weight:400;line-height:0;font-style:normal;position:relative;flex-shrink:0;font-size:24px;color:#000;width:590px}
+.sa6fe168879{font-family:"Futura PT",sans-serif;font-weight:700;line-height:normal;margin-bottom:0;white-space:pre-wrap}
+.s1f33b438c8{list-style-type:disc}
+.s642832b72d{margin-bottom:0;margin-inline-start:36px}
+.s1813ac086d{margin-inline-start:36px}
+.s7e1253e7ab{position:absolute;display:flex;height:154.878px;align-items:center;justify-content:center;left:714px;top:489px;width:348.454px}
+.s873a6d5c14{flex:none;rotate:-2.86deg}
+.s6fd95f5459{height:138px;position:relative;border-radius:20px;width:342px}
+.s5ff254a028{--tx:-50%;position:absolute;background:rgba(178,178,178,0.4);align-content:stretch;display:flex;align-items:center;justify-content:center;left:calc(50% + 0.5px);padding-left:24px;padding-right:24px;padding-top:8px;padding-bottom:8px;border-radius:100px;top:23px;translate:var(--tx,0) var(--ty,0)}
+.s82df6de44d{--tx:-50%;word-break:break-word;position:absolute;font-family:"Futura PT",sans-serif;font-weight:400;line-height:normal;left:calc(50% + 0.5px);font-style:normal;font-size:32px;color:#000;text-align:center;top:164px;white-space:nowrap;translate:var(--tx,0) var(--ty,0)}
+.s38bed54c6f{position:absolute;background:rgba(255,255,255,0.6);border-width:1px;border-color:#1f2937;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;left:42px;padding-left:24px;padding-right:24px;padding-top:14px;padding-bottom:14px;border-radius:20px;top:255px;width:1042px}
+.s3726dfb0ce{text-decoration-skip-ink:none;text-underline-position:from-font;text-decoration-thickness:from-font;text-decoration-style:solid;font-family:"Futura PT",sans-serif;font-weight:400;font-style:italic;line-height:normal;text-decoration-line:line-through;font-style:italic}
+.s6c85843635{position:absolute;background:rgba(255,255,255,0.6);border-width:1px;border-color:#1f2937;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;left:91px;padding-left:24px;padding-right:24px;padding-top:14px;padding-bottom:14px;border-radius:20px;top:463px;width:1069px}
+.s77426597a0{position:absolute;align-content:stretch;display:flex;flex-direction:column;gap:15px;align-items:center;left:-17px;top:791px}
+.s2b5f0e31af{word-break:break-word;font-family:"Futura PT",sans-serif;font-weight:400;line-height:normal;font-style:normal;position:relative;flex-shrink:0;font-size:24px;color:#000;text-align:center;width:330px}
+.s7da3b7cad4{height:148px;position:relative;border-radius:20px;flex-shrink:0;width:156px}
+.s32a235ac91{position:absolute;align-content:stretch;display:flex;flex-direction:column;gap:15px;align-items:center;left:282px;top:738px}
+.sc3a77bde89{height:263px;position:relative;border-radius:4px;flex-shrink:0;width:258px}
+.sc88eb9086b{position:absolute;inset:0;overflow:hidden;pointer-events:none;border-radius:4px}
+.s3f32cdcada{position:absolute;align-content:stretch;display:flex;flex-direction:column;gap:15px;align-items:center;left:1475px;top:690px}
+.sead319afe7{align-content:stretch;display:flex;gap:15px;align-items:flex-start;justify-content:center;position:relative;flex-shrink:0}
+.s477c1acc5c{height:156px;position:relative;border-radius:20px;flex-shrink:0;width:205px}
+.s7654222df3{position:relative;border-radius:20px;flex-shrink:0;width:178px;height:178px}
+.sd39aa25388{position:absolute;align-content:stretch;display:flex;flex-direction:column;gap:15px;align-items:center;left:1620px;top:65px}
+.sfa54eac3e8{height:341px;position:relative;border-radius:20px;flex-shrink:0;width:241px}
+.sea8bc3d342{position:absolute;height:113.78%;left:-0.05%;max-width:none;top:-3.52%;width:100.1%}
+.sbd00562d62{position:absolute;align-content:stretch;display:flex;flex-direction:column;gap:15px;align-items:center;left:701px;top:644px}
+.s67ade9703e{position:relative;border-radius:20px;flex-shrink:0;width:252px;height:252px}
+.sf5ad9bfbaf{position:absolute;align-content:stretch;display:flex;flex-direction:column;gap:15px;align-items:center;left:1054px;top:660px}
+.sf6673929d9{height:295px;position:relative;border-radius:20px;flex-shrink:0;width:389px}
+.s7405eb434f{position:absolute;align-content:stretch;display:flex;flex-direction:column;gap:15px;align-items:center;left:1253px;top:242px}
+.s2ce677ea0c{height:272px;position:relative;border-radius:20px;flex-shrink:0;width:218px}
+.s3f01110870{--tx:-50%;word-break:break-word;position:absolute;font-family:"Futura PT",sans-serif;font-weight:600;font-style:italic;line-height:normal;left:827px;font-style:normal;font-size:24px;color:#000;text-align:center;top:1000px;white-space:nowrap;translate:var(--tx,0) var(--ty,0);font-style:italic}
+.s44e1fa6427{--tx:-50%;word-break:break-word;position:absolute;font-family:"Futura PT",sans-serif;font-weight:400;line-height:0;left:50%;font-style:normal;font-size:32px;color:#000;text-align:center;top:335px;white-space:nowrap;translate:var(--tx,0) var(--ty,0)}
+.s65d22dc566{--tx:-50%;word-break:break-word;position:absolute;align-content:stretch;display:flex;font-family:"Futura PT",sans-serif;font-weight:400;font-style:italic;gap:87px;align-items:center;line-height:normal;left:calc(50% + 0.5px);font-style:normal;color:#5c4033;font-size:32px;text-align:center;top:947px;white-space:nowrap;translate:var(--tx,0) var(--ty,0);font-style:italic}
+.sd452ad70ec{position:relative;flex-shrink:0}
+.s590cc08b6f{--tx:-50%;position:absolute;background:#1f2937;align-content:stretch;cursor:pointer;display:flex;align-items:center;justify-content:center;left:calc(50% + 0.5px);padding-left:24px;padding-right:24px;padding-top:12px;padding-bottom:12px;border-radius:20px;top:452px;translate:var(--tx,0) var(--ty,0)}
+.s780519b61c{--tx:-50%;position:absolute;background:#dedede;align-content:stretch;cursor:pointer;display:flex;align-items:center;justify-content:center;left:calc(50% + 0.5px);padding-left:24px;padding-right:24px;padding-top:12px;padding-bottom:12px;border-radius:20px;top:554px;translate:var(--tx,0) var(--ty,0)}
+.s04a3559c9a{word-break:break-word;font-family:"beer money",sans-serif;font-weight:400;line-height:normal;font-style:normal;position:relative;flex-shrink:0;font-size:40px;color:#000;text-align:right;white-space:nowrap}
+.sb25884ff53{--tx:-50%;word-break:break-word;position:absolute;font-family:"Futura PT",sans-serif;font-weight:400;line-height:normal;left:calc(50% + 0.5px);font-style:normal;font-size:32px;color:#000;text-align:center;top:322px;white-space:nowrap;translate:var(--tx,0) var(--ty,0)}
+.sd7005b5484{position:absolute;align-content:stretch;display:flex;flex-direction:column;gap:13px;align-items:flex-start;left:593px;top:418px;width:734px}
+.sd0db6fdf62{background:rgba(31,41,55,0.1);align-content:stretch;display:flex;gap:13px;align-items:flex-start;padding:16px;position:relative;border-radius:20px;flex-shrink:0;width:100%}
+.sce2c6066a9{position:relative;flex-shrink:0;width:43px;height:43px}
+.s9e1ecc258f{word-break:break-word;font-family:"Futura PT",sans-serif;font-weight:400;line-height:normal;font-style:normal;position:relative;flex-shrink:0;font-size:32px;color:#000;text-align:center;white-space:nowrap}
+.sefd510dbda{background:rgba(31,41,55,0.1);align-content:stretch;cursor:pointer;display:flex;gap:13px;align-items:flex-start;padding:16px;position:relative;border-radius:20px;flex-shrink:0;width:100%}
+.sdf2996166a{position:absolute;background:#1f2937;align-content:stretch;cursor:pointer;display:flex;align-items:center;justify-content:center;left:62.47px;padding-left:24px;padding-right:24px;padding-top:12px;padding-bottom:12px;border-radius:20px;top:44px}
+.s6a7485cac0{position:absolute;background:#dedede;align-content:stretch;cursor:pointer;display:flex;align-items:center;justify-content:center;left:1631px;padding-left:24px;padding-right:24px;padding-top:12px;padding-bottom:12px;border-radius:20px;top:957px}
+.s2bf5dbc88e{--tx:-50%;position:absolute;align-content:stretch;display:flex;flex-direction:column;gap:13px;align-items:flex-start;left:50%;top:418px;width:734px;translate:var(--tx,0) var(--ty,0)}
+.s79c75fdf12{--tx:-50%;word-break:break-word;position:absolute;font-family:"Futura PT",sans-serif;font-weight:400;line-height:normal;left:50%;font-style:normal;font-size:32px;color:#000;text-align:center;top:322px;white-space:nowrap;translate:var(--tx,0) var(--ty,0)}
+.sb7d60c32d9{position:absolute;display:contents;left:419px;top:167.5px}
+.s642c36f86b{position:relative;width:100%;height:100%}
+.se4d5690a8c{position:absolute;display:flex;height:464.571px;align-items:center;justify-content:center;left:1236.13px;top:41.87px;width:467.873px}
+.sbf84ed83fe{flex:none;rotate:-44.41deg}
+.s08eb6b2f69{height:215.777px;position:relative;width:443.595px}
+.sf578595edf{position:absolute;inset:-6.18% -0.8% -1.64% -3.01%}
+.s1f3844c58a{word-break:break-word;position:absolute;font-family:"beer money",sans-serif;font-weight:400;line-height:normal;left:1415px;font-style:normal;color:#2c4240;font-size:80px;top:109px;white-space:nowrap}
+.s4fd72f8194{word-break:break-word;position:absolute;font-family:"beer money",sans-serif;font-weight:400;line-height:normal;left:143px;font-style:normal;color:#2c4240;font-size:80px;top:109px;white-space:nowrap}
+.s780a2c10fb{position:absolute;display:flex;height:464.571px;align-items:center;justify-content:center;left:134px;top:41.87px;width:467.873px}
+.sd25fdae0f2{scale:1 -1;flex:none;rotate:-135.59deg}
+.s313454338b{word-break:break-word;position:absolute;font-family:"beer money",sans-serif;font-weight:400;line-height:normal;left:214px;font-style:normal;color:#512d5b;font-size:80px;top:863px;white-space:nowrap}
+.s906b43ba74{position:absolute;display:block;cursor:pointer;height:584.866px;left:419px;top:224.53px;width:507px}
+.s9f034bb2e7{position:absolute;display:flex;height:464.571px;align-items:center;justify-content:center;left:214px;top:660px;width:467.873px}
+.s12ecc4930c{flex:none;rotate:135.59deg}
+.s2da4959559{word-break:break-word;position:absolute;font-family:"beer money",sans-serif;font-weight:400;line-height:normal;left:615px;font-style:normal;color:#5d4835;font-size:80px;top:927px;white-space:nowrap}
+.scc3cc4f862{position:absolute;display:flex;height:456.067px;align-items:center;justify-content:center;left:613px;top:754px;width:457.95px}
+.s14423e4e22{height:258.234px;position:relative;width:388.108px}
+.s3941abf1b4{position:absolute;inset:-1.37% -0.91% -1.37% -3.44%}
+.s4c43f14cf8{position:absolute;display:block;cursor:pointer;height:373.424px;left:760.23px;top:539.08px;width:430.731px}
+.s03fb46aff3{position:absolute;display:flex;height:464.571px;align-items:center;justify-content:center;left:1264px;top:504px;width:467.873px}
+.s9aaa8e93f5{scale:1 -1;flex:none;rotate:44.41deg}
+.s743c4253f7{word-break:break-word;position:absolute;font-family:"beer money",sans-serif;font-weight:400;line-height:normal;left:1433px;font-style:normal;color:#2c4240;font-size:80px;top:721px;white-space:nowrap}

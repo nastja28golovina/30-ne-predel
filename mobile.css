@@ -1,0 +1,209 @@
+/* The pattern spans the browser, independently of the design canvas. */
+html,body {background-color:#fffdef;background-image:radial-gradient(circle,#1f293733 .65px,transparent .9px);background-size:32px 32px;background-position:12px 12px}
+.screen {background:transparent!important}
+[data-canvas-background] {display:none!important}
+[hidden] {display:none!important}
+[data-bold] {font-weight:700}
+[data-italic] {font-style:italic}
+[data-strike] {text-decoration:line-through}
+@media (max-width:767px), (max-width:1023px) and (pointer:coarse) {
+  html,body {height:auto;min-height:100%;overflow-x:hidden;overflow-y:auto}
+  #viewport {position:relative;left:auto;top:auto;transform:none;width:100%;height:auto;min-height:100svh;overflow:visible;margin:0}
+  .m-page {max-width:560px;margin:0 auto;padding:24px 24px 48px;color:#1f2937;font-size:20px;line-height:1.4}
+  .m-gate {min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding-block:40px}
+  .m-title {font-family:'beer money',sans-serif;font-weight:400;font-size:clamp(40px,11vw,58px);line-height:1.12;margin:20px 0 16px;overflow-wrap:anywhere}
+  .m-gate .m-title {max-width:420px;rotate:-2deg;margin-block:20px 26px}
+  .m-eyebrow {font-size:17px;color:#5c4033;font-style:italic;margin:0 0 12px}
+  .m-gate-copy {font-size:20px;margin:0 0 28px}
+  .m-button {display:flex;justify-content:center;align-items:center;width:100%;min-height:56px;padding:15px 18px;border:1px solid #1f2937;border-radius:20px;background:#1f2937;color:#fffdef;font-size:20px;text-align:center;line-height:1.25;cursor:pointer;box-sizing:border-box;margin-top:12px}
+  .m-button-secondary {background:#ffffff66;color:#1f2937}
+  .m-status {min-height:24px;font-size:16px;margin:12px 0 0;color:#5c4033}
+  .m-link-field {width:100%;font:inherit;font-size:16px;padding:12px;background:#fff;border:1px solid #1f2937;border-radius:8px}
+  .m-back {display:inline-flex;min-height:44px;align-items:center;padding:8px 12px;margin-left:-12px;font-size:20px}
+  .m-subtitle {font-size:19px;margin:0 0 32px;max-width:420px}
+  .m-unit {margin:26px 0 34px}
+  .m-copy {padding:18px 20px;background:#ffffff88;border:1px solid #1f2937;border-radius:20px;overflow-wrap:anywhere;line-height:1.4}
+  .m-copy p+p,.m-copy ul {margin-top:.65em}
+  .m-copy ul {padding-left:22px}
+  .m-copy li+li {margin-top:.25em}
+  .m-copy li p,.m-copy p:empty {margin:0}
+  .m-note {border:0;background:none;font-size:20px;font-style:italic;text-align:center;padding:4px 8px;color:#5c4033}
+  .m-photo {margin:20px auto;max-width:100%;width:94%;rotate:-2deg}
+  .m-photo img {width:100%;height:auto;max-height:600px;object-fit:contain;border-radius:20px}
+  .m-unit:nth-of-type(even) .m-photo {rotate:2deg}
+  .m-photo+.m-photo {width:86%;rotate:3deg;margin-top:28px}
+  .m-caption {font-size:19px;line-height:1.3;padding:16px;border:1px solid #1f2937;border-radius:20px;background:#ffffff88;margin:4px 0 30px}
+  .m-menu {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px 18px;padding-top:4px;padding-bottom:30px}
+  .m-menu-card {display:block;min-width:0;position:relative;rotate:-3deg;padding-top:16px}
+  .m-menu-card:nth-child(even) {translate:0 32px;rotate:3deg}
+  .m-menu-card:nth-child(3n) {rotate:-1deg}
+  .m-menu-card .m-photo {width:100%;margin:0;rotate:0deg}
+  .m-menu-card .m-photo img {aspect-ratio:3/4;object-fit:cover;border-radius:18px}
+  .m-menu-label {position:relative;z-index:1;display:table;font-family:'beer money',sans-serif;font-size:clamp(29px,8.5vw,43px);line-height:1.1;border-radius:50px;background:#e0e0d7e6;padding:5px 12px;margin-bottom:-15px;margin-left:-6px}
+  .m-scribble {display:block;font-size:16px;font-style:italic;color:#5c4033;text-align:center;margin-top:10px}
+  .m-menu-card:active {transform:rotate(-3deg) scale(1.035)}
+  .m-extra {margin:35px 0 0;text-align:right}
+  .m-disclaimer {font-size:14px;line-height:1.35;color:#1f293788;margin-top:24px}
+  .m-chart {width:calc(100% + 16px);margin:24px -8px 10px;aspect-ratio:1100/840;overflow:hidden;position:relative}
+  .m-chart-canvas {position:absolute;width:1920px;height:1080px;transform-origin:0 0;transform:scale(var(--chart-scale, .3)) translate(-370px,-135px)}
+  .m-chart-options {display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+  .m-chip {font:inherit;font-size:17px;min-height:44px;padding:8px 12px;border:1px solid #1f293744;border-radius:24px;background:#ffffff99}
+  .m-chip[aria-pressed=true] {background:#1f2937;color:#fffdef}
+  .m-chart [data-highlight] {filter:brightness(1.28);transition:filter 180ms}
+  .m-intro-note {font-family:'beer money',sans-serif;font-size:27px;line-height:1.25;text-align:center;margin:28px 0}
+  .m-question {font-family:'Futura PT',sans-serif;font-size:29px;font-weight:500;line-height:1.2;margin:18px 0 28px}
+  .m-answers {display:flex;flex-direction:column;gap:12px}
+  .m-answer {position:relative;display:flex;align-items:center;gap:12px;text-align:left;min-height:64px;padding:16px;background:#1f293714;border:1px solid transparent;border-radius:20px;font:inherit;font-size:22px;line-height:1.25}
+  .m-answer:before {content:'';width:22px;height:22px;border:1px solid #1f2937;border-radius:50%;flex-shrink:0}
+  .m-answer.selected:before {background:#1f2937;box-shadow:inset 0 0 0 4px #fffdef}
+  .m-page[data-route=quiz] .m-title {font-size:40px}
+  .m-page[data-route=quiz] {padding-top:24px}
+}
+
+@media (max-width:767px), (max-width:1023px) and (pointer:coarse) {
+  .m-welcome-copy {font-size:18px;line-height:1.3;text-align:center;margin:36px 0;}
+  .m-welcome-copy > div {display:flex;flex-direction:column;gap:28px;}
+  .m-welcome > .m-button {margin-top:32px;}
+  .m-stats {display:block;width:max-content;margin:16px 0 28px auto;padding:14px 18px;border-radius:32px;background:rgba(31,41,55,.5);color:#fff;font-family:"beer money",sans-serif;font-size:22px;}
+}
+#viewport:focus {outline:none;}
+
+[data-demi] {font-weight:600}
+@media (max-width:767px), (max-width:1023px) and (pointer:coarse) {
+ .m-button,.m-back,.m-chip,.m-answer {font-family:'beer money',sans-serif;font-weight:400;}
+ .m-button,.m-back {font-size:28px;line-height:1.15;}
+ .m-chip {font-size:22px;}
+ .m-answer {font-size:27px;}
+ .m-gate .m-button {padding:16px 14px;}
+ .m-menu {gap:12px 18px;}
+ .m-menu-card:nth-child(even) {translate:0 22px;}
+ .m-menu-card:nth-of-type(3n) {rotate:-1deg;}
+ .m-scribble-row {grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:94px;padding:26px 4px 12px;pointer-events:none;}
+ .m-scribble {font-family:'Futura PT',sans-serif;font-size:16px;line-height:1.2;text-align:left;margin:0;max-width:48%;rotate:-8deg;}
+ .m-scribble:nth-child(even) {rotate:7deg;translate:0 16px;}
+ .m-scribble-row:nth-of-type(2) {padding-left:35px;padding-right:16px;}
+ .m-scribble-row:nth-of-type(3) {padding-left:12px;padding-right:22px;}
+ .m-quote {width:75%;margin:42px 0 46px 19%;rotate:7deg;}
+ .m-quote:nth-of-type(even) {margin-left:3%;rotate:-8deg;width:78%;}
+ .m-quote .m-note {font-size:18px;text-align:left;padding:0;}
+}
+/* Shared photo clipping and explicit quiz confirmation. */
+img[src$=".webp"], :is(div,a,figure):has(> img[src$=".webp"]) {border-radius:20px!important}
+:is(div,a,figure):has(> img[src$=".webp"]) {overflow:hidden}
+[data-answer].correct {background:#d9edce!important;outline:2px solid #43834d;outline-offset:0}
+[data-answer].correct:before {background:#43834d;box-shadow:inset 0 0 0 4px #d9edce}
+.quiz-result {position:absolute;left:50%;top:865px;translate:-50% 0;text-align:center;font-size:28px;min-width:300px}
+.quiz-result.is-correct {color:#32653b}
+.quiz-next {display:table;margin:18px auto 0;background:#1f2937;color:#fffdef;border-radius:20px;padding:12px 28px;font-family:'beer money',sans-serif;font-size:36px}
+[data-screen="quiz"] [data-node-id="66:5902"] {font-size:26px}
+[data-screen^="intro"] a[href="#/home"] {font-family:'beer money',sans-serif;font-size:40px;color:white}
+@media (max-width:767px), (max-width:1023px) and (pointer:coarse) {
+ .m-answer {font-family:'Futura PT',sans-serif;font-size:22px}
+ .quiz-result {position:static;translate:none;min-width:0;margin-top:20px;font-size:20px}
+ .quiz-next {font-size:28px;min-height:52px}
+ .m-page[data-route="quiz"] .m-title {font-size:34px;text-align:center;margin-top:46px}
+ .m-quiz-actions {display:flex;flex-direction:column;align-items:center;margin:30px 0}
+ .m-quiz-actions .m-button {width:auto;min-width:180px}
+ .m-page[data-route="quiz"] .m-unit {margin-top:42px}
+ .m-secret,.m-stats {display:flex;align-items:center;justify-content:center;flex:none;width:64px;height:64px;border-radius:50%;padding:8px;background:rgba(31,41,55,.5);color:#fff;font-family:'beer money',sans-serif;font-size:18px;line-height:1.05;text-align:center;margin-left:auto}
+ .m-secret {margin-top:12px}
+ .m-extra {font-size:16px;rotate:-5deg;margin-right:74px;margin-bottom:-40px}
+ .m-photo img,.m-menu-card .m-photo img {border-radius:20px!important}
+}
+.quiz-next[hidden] {display:none}
+
+/* Warm, soft depth for the existing photo collages. */
+.photo-depth,.m-photo {box-shadow:0 4px 10px rgba(72,51,25,.09),0 14px 30px rgba(72,51,25,.13)}
+.photo-open {cursor:zoom-in}
+.photo-open:focus-visible {outline:3px solid #5c4033;outline-offset:5px}
+.photo-viewer {position:fixed;inset:0;width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;padding:70px 80px;box-sizing:border-box;border:0;background:transparent;color:white;overflow:hidden}
+.photo-viewer[open] {display:flex;align-items:center;justify-content:center}
+.photo-viewer::backdrop {background:rgba(19,18,16,.83);backdrop-filter:blur(4px)}
+.photo-viewer .photo-full {display:block;object-fit:contain;max-width:100%;max-height:100%;border-radius:20px!important;box-shadow:0 20px 70px #0005}
+.photo-viewer button {position:absolute;display:grid;place-items:center;width:48px;height:48px;padding:0;border:1px solid #ffffff40;border-radius:50%;background:#ffffff12;color:white;font:32px/1 sans-serif;cursor:pointer}
+.photo-viewer button:hover {background:#ffffff30}
+.photo-viewer button:focus-visible {outline:2px solid white;outline-offset:4px}
+.photo-close {top:20px;right:24px}
+.photo-prev {left:20px;top:calc(50% - 24px)}
+.photo-next {right:20px;top:calc(50% - 24px)}
+.photo-count {position:absolute;bottom:20px;left:0;right:0;text-align:center;font:18px/1.4 'Futura PT',sans-serif;pointer-events:none}
+
+/* The transparent chart sticker has no rectangular photo frame. */
+.photo-cutout {box-shadow:none!important;background:transparent!important;border-radius:0!important;overflow:visible!important;pointer-events:none}
+.photo-cutout > img {border-radius:0!important;filter:drop-shadow(0 7px 10px rgba(40,30,20,.16));pointer-events:none}
+
+/* Photo and shadow share the same rounded, transparent frame. */
+.photo-depth {border-radius:20px!important;overflow:hidden;isolation:isolate;background:transparent!important}
+.m-photo {border-radius:20px!important;overflow:hidden;background:transparent!important}
+.m-photo img {display:block;border-radius:20px!important;max-height:none}
+
+/* Page artwork fills every viewport, independent of collage scaling. */
+body::before {content:'';position:fixed;inset:0;pointer-events:none;background-position:center;background-size:cover;z-index:0}
+body[data-route=friends]::before {background-image:url('assets/8126d026bb9c1e0184e7.webp');background-repeat:no-repeat;opacity:.2;border:0;border-radius:0;box-shadow:none}
+body[data-route=beer]::before {background-image:url('assets/beer-background.webp');opacity:.2}
+body[data-route=gift]::before {background-image:url('assets/gift-background.webp');opacity:.15}
+[data-page-background] {display:none!important}
+.photo-open {pointer-events:auto!important}
+.m-home-link {float:right;margin-right:-12px}
+@media (max-width:767px), (max-width:1023px) and (pointer:coarse) {
+ .m-page[data-route=gift] .m-copy {padding:18px 20px;border:1px solid #1f2937;border-radius:20px;background:#ffffff99;color:#1f2937;font-size:20px;font-style:normal;text-align:left}
+}
+
+/* Keep the new games photograph clear of the longer text card. */
+.screen[data-screen="games"] [data-node-id="451:33"] {top:747px!important}
+@media (max-width:1023px) {
+ .m-page[data-route=gift] .m-copy.m-note {padding:0;border:0;background:transparent;text-align:center;font-size:18px}
+}
+
+/* The desktop answer uses a Figma circle image; mobile uses a pseudo-element. */
+[data-answer].correct > div:has(> img[src$=".svg"]) {background:#43834d;border:2px solid #43834d;border-radius:50%;box-shadow:inset 0 0 0 4px #d9edce}
+[data-answer].correct > div > img[src$=".svg"] {visibility:hidden}
+@media (max-width:767px), (max-width:1023px) and (pointer:coarse) {
+ .m-menu {position:relative;gap:78px 22px;padding-top:8px;padding-bottom:100px}
+ .m-menu-card:nth-child(even) {translate:0 78px;rotate:4deg}
+ .m-menu-card:nth-child(3) {rotate:-5deg}
+ .m-menu-card:nth-child(5) {rotate:-2deg}
+ .m-menu > .m-scribble {position:absolute;z-index:2;pointer-events:none;max-width:46%;font-size:15px}
+ .m-scribble[data-phrase="1"] {top:22px;right:12px;rotate:9deg}
+ .m-scribble[data-phrase="2"] {top:32%;left:4px;rotate:-7deg}
+ .m-scribble[data-phrase="3"] {top:38%;right:7px;rotate:5deg}
+ .m-scribble[data-phrase="4"] {top:63%;left:10px;rotate:-11deg}
+ .m-scribble[data-phrase="5"] {top:70%;right:2px;rotate:8deg}
+ .m-scribble[data-phrase="6"] {bottom:34px;left:8px;rotate:-5deg}
+ .m-extra {font-family:'beer money',sans-serif;font-style:normal;font-size:22px}
+ .m-page[data-route="quiz"] .m-unit {rotate:0deg;width:100%;margin:42px 0 34px}
+ .m-page[data-route="quiz"] .m-copy {text-align:center;rotate:0deg;border:0;background:none;padding:0;font-style:italic;color:#5c4033}
+ .m-page[data-route="sport"] .m-unit:not(:first-of-type) .m-photo {width:82%}
+}
+
+/* Keep the expanded sports wish inside the desktop canvas. */
+[data-screen="sport"] [data-node-id="175:6494"] {font-size:20px}
+
+@media (max-width:767px), (max-width:1023px) and (pointer:coarse) {
+ .m-question {font-size:24px;line-height:1.25;margin:24px 0}
+ .m-answer {font-size:18px;line-height:1.3}
+ .m-page[data-route^="question-"] .quiz-next {margin-top:44px}
+}
+
+.home-extra-phrase {position:absolute;left:550px;top:270px;font-family:'Futura PT',sans-serif;font-size:24px;font-style:italic;color:#5c4033;rotate:-7deg;pointer-events:none}
+@media (max-width:767px), (max-width:1023px) and (pointer:coarse) {
+ .m-scribble[data-phrase="7"] {bottom:0;right:0;rotate:6deg}
+}
+
+/* Some Stats continues below the original full-height chart. */
+html.has-sticker-stats,html.has-sticker-stats body {overflow-x:hidden;overflow-y:auto;height:auto;min-height:100%}
+html.has-sticker-stats #viewport {top:50vh}
+#sticker-stats {position:relative;margin:100vh auto 0;padding:56px 40px 90px;max-width:1180px;color:#1f2937}
+#sticker-stats h2 {font-family:'beer money',sans-serif;font-weight:400;font-size:64px;text-align:center;margin:0 0 45px}
+.sticker-ranking {list-style:none;margin:0;padding:0}
+.sticker-ranking li {display:grid;grid-template-columns:110px 380px 1fr;align-items:center;gap:30px;padding:36px 0;border-bottom:1px solid #5c403326;min-height:320px}
+.sticker-rank {font-family:'beer money',sans-serif;font-size:40px;transform:rotate(-6deg);color:#5c4033}
+.sticker-art {display:flex;align-items:center;justify-content:center;gap:14px;min-width:0}
+.sticker-art img {display:block;max-width:100%;width:260px;height:260px;object-fit:contain}
+.sticker-art img:first-child:nth-last-child(2),.sticker-art img:first-child:nth-last-child(2)~img {width:calc(50% - 7px)}
+.sticker-ranking p {font-size:26px;line-height:1.4;margin:0}
+.sticker-back {display:table;margin:55px auto 0;font-family:'beer money',sans-serif;font-size:34px}
+@media (max-width:1100px) {.sticker-ranking li {grid-template-columns:85px 290px 1fr;gap:20px}.sticker-ranking p {font-size:23px}}
+
+.stats-scroll-hint {position:absolute;left:100px;bottom:55px;display:flex;align-items:center;gap:12px;padding:12px;background:transparent;border:0;color:#5c4033;font-family:'beer money',sans-serif;font-size:30px;transform:rotate(-6deg);cursor:pointer}
+.stats-scroll-hint:hover {color:#1f2937}
